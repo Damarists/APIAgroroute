@@ -1,0 +1,340 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Lucas",
+      "lastName": "Gomez Martinez",
+      "dni": "78093456",
+      "birthDate": "2004-08-23",
+      "phoneNumber": "908678456",
+      "email": "lucasgomez@gmail.com",
+      "password": "Luc@s1234"
+    }
+  ],
+  "shipments": [
+    {
+      "id": 1,
+      "trackingNumber": "TKR720997",
+      "ownerId": "1",
+      "destino": "Av. Javier Prado Este 3536, San Borja 15037",
+      "fecha": "2025-06-23T00:00:00.000",
+      "estado": "En proceso",
+      "ubicacion": true,
+      "paquetes": [
+        {
+          "codigo": "PQ633959",
+          "cliente": "Maria Martinez",
+          "destino": "Nueva Panamericana Sur, San Vicente de Cañete 15700",
+          "descripcion": "Equipo",
+          "peso": "20",
+          "alto": "2",
+          "ancho": "5",
+          "largo": "5",
+          "fecha": "2025-06-21T00:00:00.000",
+          "estado": "En proceso",
+          "destinoLat": -13.2036308,
+          "destinoLng": -76.3388398,
+          "shipmentId": 1,
+          "sensores": [
+            {
+              "tipo": "Temperatura",
+              "valor": 20,
+              "activo": true,
+              "id": ""
+            },
+            {
+              "tipo": "Humedad",
+              "valor": 8,
+              "activo": true,
+              "id": ""
+            }
+          ]
+        },
+        {
+          "codigo": "PQ719830",
+          "cliente": "Felipe Gonzaga",
+          "destino": "Panamericana Sur Km 449, El Carmen de Pangaravi, Nasca",
+          "descripcion": "Equipo",
+          "peso": "15",
+          "alto": "2",
+          "ancho": "5",
+          "largo": "5",
+          "fecha": "2025-06-22T00:00:00.000",
+          "estado": "En proceso",
+          "destinoLat": -14.8369317,
+          "destinoLng": -74.9424281,
+          "shipmentId": 1,
+          "sensores": [
+            {
+              "tipo": "Humedad",
+              "valor": 8,
+              "activo": true,
+              "id": ""
+            },
+            {
+              "tipo": "Temperatura",
+              "valor": 20,
+              "activo": true,
+              "id": ""
+            }
+          ]
+        }
+      ],
+      "destinoLat": -12.0863974,
+      "destinoLng": -76.98798479999999
+    },
+    {
+      "id": 2,
+      "trackingNumber": "TKR631925",
+      "ownerId": "1",
+      "destino": "Panamericana Sur Km 449, El Carmen de Pangaravi, Nasca",
+      "fecha": "2025-06-24T00:00:00.000",
+      "estado": "En proceso",
+      "ubicacion": true,
+      "paquetes": [
+        {
+          "codigo": "PQ467506",
+          "cliente": "Dylan Alvarado",
+          "destino": "Av. Prol. Javier Prado Este 8680, Ate 15494",
+          "descripcion": "Ropa",
+          "peso": "30",
+          "alto": "2",
+          "ancho": "4",
+          "largo": "4",
+          "fecha": "2025-06-22T00:00:00.000",
+          "estado": "En proceso",
+          "destinoLat": -12.0413083,
+          "destinoLng": -76.9315362,
+          "shipmentId": 2,
+          "sensores": [
+            {
+              "tipo": "Humedad",
+              "valor": 8,
+              "activo": true,
+              "id": ""
+            },
+            {
+              "tipo": "Temperatura",
+              "valor": 18,
+              "activo": true,
+              "id": ""
+            }
+          ]
+        },
+        {
+          "codigo": "PQ630083",
+          "cliente": "Luis Alvarado",
+          "destino": "Av. Cuzco 47561, Ventanilla 07056",
+          "descripcion": "Ropa",
+          "peso": "30",
+          "alto": "2",
+          "ancho": "4",
+          "largo": "4",
+          "fecha": "2025-06-24T00:00:00.000",
+          "estado": "En proceso",
+          "destinoLat": -11.8643686,
+          "destinoLng": -77.1280835,
+          "shipmentId": 2,
+          "sensores": [
+            {
+              "tipo": "Humedad",
+              "valor": 8,
+              "activo": true,
+              "id": ""
+            },
+            {
+              "tipo": "Temperatura",
+              "valor": 18,
+              "activo": true,
+              "id": ""
+            }
+          ]
+        }
+      ],
+      "destinoLat": -14.8369317,
+      "destinoLng": -74.9424281
+    }
+  ],
+  "alerts": [
+    {
+      "id": "1750382762191",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Temperatura",
+        "valor": 18,
+        "activo": true,
+        "id": "TKR720997_PQ719830_1_Temperatura",
+        "destino": "Panamericana Sur Km 449, El Carmen de Pangaravi, Nasca",
+        "cliente": "Felipe Gonzaga",
+        "packageCode": "PQ719830",
+        "destinoLat": -14.8369317,
+        "destinoLng": -74.9424281
+      },
+      "valorAnterior": 20,
+      "valorActual": 20,
+      "mensaje": "Sensor Temperatura ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "resuelto",
+      "bajar": true
+    },
+    {
+      "id": "1750382782175",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Temperatura",
+        "valor": 9,
+        "activo": true,
+        "id": "TKR720997_PQ719830_1_Temperatura",
+        "destino": "Panamericana Sur Km 449, El Carmen de Pangaravi, Nasca",
+        "cliente": "Felipe Gonzaga",
+        "packageCode": "PQ719830",
+        "destinoLat": -14.8369317,
+        "destinoLng": -74.9424281
+      },
+      "valorAnterior": 18,
+      "valorActual": 20,
+      "mensaje": "Sensor Temperatura ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "resuelto",
+      "bajar": true
+    },
+    {
+      "id": "1750382792243",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Humedad",
+        "valor": 1,
+        "activo": true,
+        "id": "TKR720997_PQ633959_1_Humedad",
+        "destino": "Nueva Panamericana Sur, San Vicente de Cañete 15700",
+        "cliente": "Maria Martinez",
+        "packageCode": "PQ633959",
+        "destinoLat": -13.2036308,
+        "destinoLng": -76.3388398
+      },
+      "valorAnterior": 8,
+      "valorActual": 1,
+      "mensaje": "Sensor Humedad ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "esperandoConfirmacion",
+      "bajar": true
+    },
+    {
+      "id": "1750382812176",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Temperatura",
+        "valor": 10,
+        "activo": true,
+        "id": "TKR720997_PQ633959_1_Temperatura",
+        "destino": "Nueva Panamericana Sur, San Vicente de Cañete 15700",
+        "cliente": "Maria Martinez",
+        "packageCode": "PQ633959",
+        "destinoLat": -13.2036308,
+        "destinoLng": -76.3388398
+      },
+      "valorAnterior": 20,
+      "valorActual": 20,
+      "mensaje": "Sensor Temperatura ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "resuelto",
+      "bajar": true
+    },
+    {
+      "id": "1750382947383",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Temperatura",
+        "valor": 12,
+        "activo": true,
+        "id": "TKR720997_PQ633959_1_Temperatura",
+        "destino": "Nueva Panamericana Sur, San Vicente de Cañete 15700",
+        "cliente": "Maria Martinez",
+        "packageCode": "PQ633959",
+        "destinoLat": -13.2036308,
+        "destinoLng": -76.3388398
+      },
+      "valorAnterior": 20,
+      "valorActual": 20,
+      "mensaje": "Sensor Temperatura ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "resuelto",
+      "bajar": true
+    },
+    {
+      "id": "1750383194142",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Humedad",
+        "valor": -2,
+        "activo": true,
+        "id": "TKR720997_PQ719830_1_Humedad",
+        "destino": "Panamericana Sur Km 449, El Carmen de Pangaravi, Nasca",
+        "cliente": "Felipe Gonzaga",
+        "packageCode": "PQ719830",
+        "destinoLat": -14.8369317,
+        "destinoLng": -74.9424281
+      },
+      "valorAnterior": 8,
+      "valorActual": -2,
+      "mensaje": "Sensor Humedad ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "esperandoConfirmacion",
+      "bajar": true
+    },
+    {
+      "id": "1750383404145",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Temperatura",
+        "valor": 16,
+        "activo": true,
+        "id": "TKR720997_PQ633959_1_Temperatura",
+        "destino": "Nueva Panamericana Sur, San Vicente de Cañete 15700",
+        "cliente": "Maria Martinez",
+        "packageCode": "PQ633959",
+        "destinoLat": -13.2036308,
+        "destinoLng": -76.3388398
+      },
+      "valorAnterior": 20,
+      "valorActual": 20,
+      "mensaje": "Sensor Temperatura ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "resuelto",
+      "bajar": true
+    },
+    {
+      "id": "1750384732969",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Temperatura",
+        "valor": 11,
+        "activo": true,
+        "id": "TKR720997_PQ633959_1_Temperatura",
+        "destino": "Nueva Panamericana Sur, San Vicente de Cañete 15700",
+        "cliente": "Maria Martinez",
+        "packageCode": "PQ633959",
+        "destinoLat": -13.2036308,
+        "destinoLng": -76.3388398
+      },
+      "valorAnterior": 20,
+      "valorActual": 11,
+      "mensaje": "Sensor Temperatura ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "esperandoConfirmacion",
+      "bajar": true
+    },
+    {
+      "id": "1750388684898",
+      "userId": "1",
+      "sensor": {
+        "tipo": "Humedad",
+        "valor": 2,
+        "activo": true,
+        "id": "TKR631925_PQ467506_1_Humedad",
+        "destino": "Av. Prol. Javier Prado Este 8680, Ate 15494",
+        "cliente": "Dylan Alvarado",
+        "packageCode": "PQ467506",
+        "destinoLat": -12.0413083,
+        "destinoLng": -76.9315362
+      },
+      "valorAnterior": 8,
+      "valorActual": 2,
+      "mensaje": "Sensor Humedad ha bajado su valor, se le recomienda verificar el sensor para que regrese a su valor",
+      "estado": "pendiente",
+      "bajar": true
+    }
+  ]
+}
