@@ -109,8 +109,6 @@ app.get('/api/v1/shipments', (req, res) => {
   res.json(db.shipments || []);
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
 app.get('/api/v1/alerts/:userId', (req, res) => {
   const db = readDB();
   const userAlerts = (db.alerts || []).filter(a => a.userId == req.params.userId);
@@ -135,3 +133,5 @@ app.patch('/api/v1/alerts/:alertId', (req, res) => {
   writeDB(db);
   res.json(alert);
 });
+
+module.exports = app;
