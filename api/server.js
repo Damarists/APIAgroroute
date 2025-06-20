@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -10,7 +10,6 @@ app.get('/', (req, res) => {
   res.send('API Agroroute funcionando');
 });
 
-const path = require('path');
 const DB_FILE = path.join(__dirname, 'db.json');
 
 function readDB() {
@@ -133,5 +132,11 @@ app.patch('/api/v1/alerts/:alertId', (req, res) => {
   writeDB(db);
   res.json(alert);
 });
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
 module.exports = app;
